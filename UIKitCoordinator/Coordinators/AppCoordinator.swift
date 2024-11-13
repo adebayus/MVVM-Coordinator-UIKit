@@ -14,17 +14,19 @@ class AppCoordinator: Coordinator {
     var children: [any Coordinator] = []
     var navigationController: UINavigationController
     
+    
     init( navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        let isAuthenticated = false
+//        let isAuthenticated = false
+        goToLogin()
     }
     
     func goToLogin() {
 //        let navController = UINavigationController()
-        let authCoor = AuthCoordinator(navigationController: self.navigationController)
+        let authCoor = AuthCoordinator(navigationController: navigationController)
         authCoor.start()
     }
     

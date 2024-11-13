@@ -16,18 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        if #available(iOS 13, *) { }
-        else {
-            
-            self.window = UIWindow(frame: UIScreen.main.bounds )
-            
-            let navControler = UINavigationController()
-            appCoordinator = AppCoordinator(navigationController: navControler)
-            appCoordinator?.start()
-            
-            window!.rootViewController = navControler
-            window!.makeKeyAndVisible()
+        if #available(iOS 13, *) {
+            return true
         }
+          
+        self.window = UIWindow(frame: UIScreen.main.bounds )
+        
+        let navControler = UINavigationController()
+        appCoordinator = AppCoordinator(navigationController: navControler)
+        appCoordinator!.start()
+        
+        window!.rootViewController = navControler
+        window!.makeKeyAndVisible()
         
         return true
     }

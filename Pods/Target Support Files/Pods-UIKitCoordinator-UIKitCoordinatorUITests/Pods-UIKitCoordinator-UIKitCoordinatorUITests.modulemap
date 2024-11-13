@@ -1,0 +1,6 @@
+framework module Pods_UIKitCoordinator_UIKitCoordinatorUITests {
+  umbrella header "Pods-UIKitCoordinator-UIKitCoordinatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
