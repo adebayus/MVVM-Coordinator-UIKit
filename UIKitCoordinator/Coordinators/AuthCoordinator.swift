@@ -20,19 +20,19 @@ class AuthCoordinator: Coordinator {
     }
     
     func start() {
-//        let isAuthenticated = false
-//        
-//        if (isAuthenticated) {
-//            
-//        } else {
-//            goToLogin()
-//        }
+        let isAuthenticated = true
         
-        let vc = TestingRXViewController(nibName: "TestingRXViewController", bundle: nil)
-        let todoViewModel = TodosViewModel(repository: TodoRepository())
-        vc.viewModel = todoViewModel
+        if (isAuthenticated) {
+            let vc = TestingRXViewController(nibName: "TestingRXViewController", bundle: nil)
+            let todoViewModel = TodosViewModel(repository: TodoRepository())
+            vc.viewModel = todoViewModel
+            
+            navigationController.pushViewController(vc, animated: true)
+        } else {
+            goToLogin()
+        }
         
-        navigationController.pushViewController(vc, animated: true)
+       
     }
     
     func goToLogin() {

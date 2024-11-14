@@ -6,16 +6,20 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TestingRXViewController: UIViewController {
 
     internal var viewModel: TodosViewModel!
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TestingRXViewController")
         viewModel.fetchTodo()
         setupBind()
+        testing()
         // Do any additional setup after loading the view.
     }
     
@@ -32,8 +36,93 @@ class TestingRXViewController: UIViewController {
         
         
     }
+    
+    func testing() {
+        
+        let one = 1
+        let two = 2
+        let three = 3
+        
+        let observable = Observable<Int>.just(one)
+        let observable2 = Observable.of(one, two, three)
+        let observable3 = Observable.of([one, two, three])
+        let observable4 = Observable.from([one, two, three])
+        let observableVoid = Observable<Void>.empty()
+        let observable6 = Observable<Int>.range(start: 1, count: 10)
+
+        
+        observable.subscribe(
+            onNext: { value in
+                print(value, "observable-")
+            },
+            onCompleted: {
+                print("completed", "observable-")
+            }
+            
+        )
+        
+        
+        observable2.subscribe(onNext: { value in
+            print(value, "observable2-")
+        })
+        
+        observable3.subscribe(onNext: { value in
+            print(value, "observable3-")
+        })
+        
+        observable4.subscribe(onNext: { value in
+            print(value, "observable4-")
+        })
+        
+        observableVoid.subscribe(
+            onNext: { value in
+                print(value, "observable5-")
+            },
+            onCompleted: {
+                print("completed", "observable5-")
+            }
+            
+        )
+        
+        observable6
+           .subscribe(onNext: { i in
+             // 2
+             let n = Double(i)
+
+             let fibonacci = Int(
+               ((pow(1.61803, n) - pow(0.61803, n)) /
+                 2.23606).rounded()
+             )
+
+             print(fibonacci, "observable6-")
+         })
+        
+        Observable<String>.create { observer in
+          // 1
+          observer.onNext("1")
+
+          // 2
+//          observer.onCompleted()
+
+          // 3
+          observer.onNext("?")
+
+          // 4
+          return Disposables.create()
+        }.subscribe(
+            onNext: { print($0) },
+            onError: { print($0) },
+            onCompleted: { print("Completed") },
+            onDisposed: { print("Disposed") }
+          )
+          .disposed(by: disposeBag)
+        
+        
+    }
 
 
+    
+    
     /*
     // MARK: - Navigation
 

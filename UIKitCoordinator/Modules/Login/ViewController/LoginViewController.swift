@@ -6,25 +6,50 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    
     @IBOutlet weak var contentSVBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var contentSV: UIStackView!
+    
+    var disposeBag = DisposeBag()
     var viewModel: LoginViewModel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNotification()
+        
         let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
-        statusBarView.backgroundColor = UIColor(named: "PrimaryRed")
+        statusBarView.backgroundColor = UIColor(named: "background_primary")
         view.addSubview(statusBarView)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
         
-       
+        setupBind()
         // Do any additional setup after loading the view.
+    }
+    
+    func setupBind() {
+        emailTextfield.rx.text.orEmpty
+            .bind(to: viewModel.emailText)
+            .disposed(by: disposeBag)
+        
+        viewModel.emailText.subscribe(
+            onNext: { value in
+                print(value,"")
+            }
+        ).disposed(by: disposeBag)
+    }
+    
+    @IBAction func submitAction(_ sender: Any) {
+        print(viewModel.getEmailText())
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,15 +83,6 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func testing(_ sender: Any) {
         viewModel.coordinator.gotoRegister()
     }
