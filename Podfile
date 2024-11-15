@@ -9,6 +9,9 @@ target 'UIKitCoordinator' do
   pod "Alamofire"
   pod "RxCocoa"
   pod "RxSwift"
+  pod "Alamofire"
+  pod "SwiftKeychainWrapper"
+  
   target 'UIKitCoordinatorTests' do
     inherit! :search_paths
     # Pods for testing

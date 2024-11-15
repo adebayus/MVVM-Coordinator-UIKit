@@ -20,7 +20,7 @@ class AuthCoordinator: Coordinator {
     }
     
     func start() {
-        let isAuthenticated = true
+        let isAuthenticated = false
         
         if (isAuthenticated) {
             let vc = TestingRXViewController(nibName: "TestingRXViewController", bundle: nil)

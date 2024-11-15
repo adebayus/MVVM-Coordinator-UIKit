@@ -10,36 +10,24 @@ import Alamofire
 import RxSwift
 import RxRelay
 
-
-enum ApiEndpoint {
-    
-    static let baseURL = "https://jsonplaceholder.typicode.com"
-    
-    case fetchTodos
-    case fetchTodoDetail(id: Int)
-    
-    var path: String {
-        switch self {
-        case .fetchTodos: "/todo"
-        case .fetchTodoDetail(id: let id): "/todos/\(id)"
-        }
-    }
-    
-    var url: String {
-        return ApiEndpoint.baseURL + path
-    }
-}
-
 class NetworkService {
     
     static let shared = NetworkService()
     
     private init() {}
     
-    func request<T: Decodable>(_ endpoint: ApiEndpoint, method: HTTPMethod = .get, paramaters: Parameters? = nil) -> Observable<T> {
+    func request<T: Decodable>(
+        _ endpoint: ApiEndpoint,
+        method: HTTPMethod = .get,
+        paramaters: Parameters? = nil
+    ) -> Observable<T> {
         
         return Observable.create { observer in
-            let request = AF.request(endpoint.url, method: method, parameters: paramaters)
+            let request = AF.request(
+                endpoint.url,
+                method: method,
+                parameters: paramaters
+            )
                 .validate()
                 .responseDecodable(of: T.self) { response in
                     switch response.result {
@@ -75,15 +63,15 @@ class TodoRepository: TodoRepositoryProtocol {
     }
     
     func fetchTodos() -> RxSwift.Observable<[Todo]> {
-        return networkService.request(.fetchTodos)
+        return networkService.request(.postAuth)
     }
     
     func fetchDetail(id: Int) -> RxSwift.Observable<Todo> {
-        return networkService.request(.fetchTodoDetail(id: id))
+        return networkService.request(.getAuth(id: id))
     }
 }
 
-struct Todo: Decodable {
+struct Todo: Codable {
     var userId: Int
     var id: Int
     var title: String
