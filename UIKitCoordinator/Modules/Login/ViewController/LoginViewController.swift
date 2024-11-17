@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailBorderBottomView: UIView!
     @IBOutlet weak var errorEmailLabel: UILabel!
     @IBOutlet weak var forgetPasswordLabel: UILabel!
-    @IBOutlet weak var submitButton: UICapsuleButton!
+    @IBOutlet weak var submitButton: UIButtonCapsule!
     
     var disposeBag = DisposeBag()
     var viewModel: LoginViewModel!
@@ -38,6 +38,7 @@ class LoginViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
         
+        setupLoadingView()
         setupTapGesture()
         setupBind()
         // Do any additional setup after loading the view.
@@ -45,6 +46,12 @@ class LoginViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
+//        showLoadingView()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+       
     }
     
     
@@ -88,6 +95,14 @@ class LoginViewController: UIViewController {
         }
         .bind(to: submitButton.rx.isEnabled)
         .disposed(by: disposeBag)
+        
+        viewModel.isLoading
+            .subscribe(
+                onNext: { value in
+                    self.showLoadingView(isShow: value)
+                }
+            ).disposed(by: disposeBag)
+        
     }
     
     func updateErrorTF(
@@ -112,8 +127,10 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func submitAction(_ sender: Any) {
-//        print(viewModel.getEmailText())
+        //        print(viewModel.getEmailText())
+        viewModel.submit()
     }
+    
     
     
     @IBAction func testing(_ sender: Any) {

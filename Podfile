@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '12.0'
 
 target 'UIKitCoordinator' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -11,6 +11,7 @@ target 'UIKitCoordinator' do
   pod "RxSwift"
   pod "Alamofire"
   pod "SwiftKeychainWrapper"
+  pod "Wormholy"
   
   target 'UIKitCoordinatorTests' do
     inherit! :search_paths

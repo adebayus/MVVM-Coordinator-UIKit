@@ -7,12 +7,14 @@ PODS:
     - RxSwift (= 6.8.0)
   - RxSwift (6.8.0)
   - SwiftKeychainWrapper (4.0.1)
+  - Wormholy (1.7.0)
 
 DEPENDENCIES:
   - Alamofire
   - RxCocoa
   - RxSwift
   - SwiftKeychainWrapper
+  - Wormholy
 
 SPEC REPOS:
   trunk:
@@ -21,6 +23,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SwiftKeychainWrapper
+    - Wormholy
 
 SPEC CHECKSUMS:
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
@@ -28,7 +31,8 @@ SPEC CHECKSUMS:
   RxRelay: 335c78b926a2aea8d863a6d25f1ed3b5ad8e8705
   RxSwift: 4e28be97cbcfeee614af26d83415febbf2bf6f45
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  Wormholy: ab1c8c2f02f58587a0941deb0088555ffbf039a1
 
-PODFILE CHECKSUM: f3e72c2defc9155fe6f8695d02fbe9180505840a
+PODFILE CHECKSUM: 26aeecc37646c8afb5d9062f1a9dc27f84218d98
 
 COCOAPODS: 1.15.2

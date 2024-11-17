@@ -20,18 +20,11 @@ class AuthCoordinator: Coordinator {
     }
     
     func start() {
-        let isAuthenticated = false
-        
-        if (isAuthenticated) {
-            let vc = TestingRXViewController(nibName: "TestingRXViewController", bundle: nil)
-            let todoViewModel = TodosViewModel(repository: TodoRepository())
-            vc.viewModel = todoViewModel
-            
-            navigationController.pushViewController(vc, animated: true)
+        if let token = KeychainManager.shared.getToken() {
+            goToTabBar()
         } else {
             goToLogin()
         }
-        
        
     }
     
@@ -40,6 +33,7 @@ class AuthCoordinator: Coordinator {
         let vc = LoginViewController(nibName: "LoginViewController", bundle: nil)
         let loginViewModel = LoginViewModel()
         loginViewModel.coordinator = self
+        loginViewModel.authRepository = AuthRepository()
         vc.viewModel = loginViewModel
         
         navigationController.pushViewController(vc, animated: true)
@@ -50,5 +44,15 @@ class AuthCoordinator: Coordinator {
 //        navigationController.pushViewController(RegisterViewController(), animated: true)
     }
     
+    func goToTabBar() {
+        let vc = UITabBarViewController(nibName: "UITabBarViewController", bundle: nil)
+        let viewModel = UITabBarViewModel()
+        viewModel.coordinator = self
+        
+        navigationController.pushViewController(
+            vc,
+            animated: true
+        )
+    }
     
 }

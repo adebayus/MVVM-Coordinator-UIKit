@@ -19,17 +19,20 @@ class NetworkService {
     func request<T: Decodable>(
         _ endpoint: ApiEndpoint,
         method: HTTPMethod = .get,
-        paramaters: Parameters? = nil
+        paramaters: Parameters? = nil,
+        encoding: any ParameterEncoding = URLEncoding.default
     ) -> Observable<T> {
-        
+        debugPrint(endpoint.url, T.self, "testinggg12")
         return Observable.create { observer in
-            let request = AF.request(
+            let request = SessionManager.shared.request(
                 endpoint.url,
                 method: method,
-                parameters: paramaters
+                parameters: paramaters,
+                encoding: encoding
             )
                 .validate()
                 .responseDecodable(of: T.self) { response in
+                    print(response, "[response]")
                     switch response.result {
                     case .success(let value):
                         observer.onNext(value)
@@ -48,6 +51,8 @@ class NetworkService {
     }
     
 }
+
+
 
 protocol TodoRepositoryProtocol {
     func fetchTodos() -> Observable<[Todo]>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UICapsuleButton: UIButton {
+class UIButtonCapsule: UIButton {
     
     var bg: UIColor = .backgroundPrimary
     

@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FE6F1C72CE7A4350008BC6A /* DeviceManagerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1C62CE7A4350008BC6A /* DeviceManagerr.swift */; };
+		1FE6F1CA2CE7AA760008BC6A /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1C92CE7AA760008BC6A /* AuthRepository.swift */; };
+		1FE6F1CD2CE7AB370008BC6A /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1CC2CE7AB370008BC6A /* BaseResponse.swift */; };
+		1FE6F1D02CE7AF120008BC6A /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1CF2CE7AF120008BC6A /* AuthRequest.swift */; };
+		1FE6F1D62CE8F02F0008BC6A /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1D42CE8F02F0008BC6A /* UITabBarViewController.swift */; };
+		1FE6F1D72CE8F02F0008BC6A /* UITabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE6F1D52CE8F02F0008BC6A /* UITabBarViewController.xib */; };
+		1FE6F1DD2CE8F8E30008BC6A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1DC2CE8F8E30008BC6A /* UIViewController+Extension.swift */; };
+		1FE6F1DF2CE8F98F0008BC6A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1DE2CE8F98F0008BC6A /* LoadingView.swift */; };
 		3631865EE91EE2D3D9A23B9F /* Pods_UIKitCoordinatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9787B59747D4C31615F65867 /* Pods_UIKitCoordinatorTests.framework */; };
 		647875C72CE48E03007A804B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647875C52CE48E03007A804B /* NetworkService.swift */; };
 		647875CA2CE49CB6007A804B /* TestingRXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647875C82CE49CB6007A804B /* TestingRXViewController.swift */; };
 		647875CB2CE49CB6007A804B /* TestingRXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647875C92CE49CB6007A804B /* TestingRXViewController.xib */; };
-		647E3D152CE723AE00AA9795 /* UICapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E3D142CE7239900AA9795 /* UICapsuleButton.swift */; };
+		647E3D152CE723AE00AA9795 /* UIButtonCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E3D142CE7239900AA9795 /* UIButtonCapsule.swift */; };
 		647F05282CE33CF700DFF39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647F05122CE33CF700DFF39A /* LaunchScreen.storyboard */; };
 		647F05292CE33CF700DFF39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647F05242CE33CF700DFF39A /* Assets.xcassets */; };
 		647F052B2CE33CF700DFF39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F05102CE33CF700DFF39A /* AppDelegate.swift */; };
@@ -51,6 +59,14 @@
 /* Begin PBXFileReference section */
 		087DE1527C47467EC9746B97 /* Pods-UIKitCoordinator-UIKitCoordinatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCoordinator-UIKitCoordinatorUITests.release.xcconfig"; path = "Target Support Files/Pods-UIKitCoordinator-UIKitCoordinatorUITests/Pods-UIKitCoordinator-UIKitCoordinatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0E2D0A3728F9251C1347F4D6 /* Pods-UIKitCoordinator-UIKitCoordinatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCoordinator-UIKitCoordinatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIKitCoordinator-UIKitCoordinatorUITests/Pods-UIKitCoordinator-UIKitCoordinatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FE6F1C62CE7A4350008BC6A /* DeviceManagerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManagerr.swift; sourceTree = "<group>"; };
+		1FE6F1C92CE7AA760008BC6A /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		1FE6F1CC2CE7AB370008BC6A /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		1FE6F1CF2CE7AF120008BC6A /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		1FE6F1D42CE8F02F0008BC6A /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
+		1FE6F1D52CE8F02F0008BC6A /* UITabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITabBarViewController.xib; sourceTree = "<group>"; };
+		1FE6F1DC2CE8F8E30008BC6A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1FE6F1DE2CE8F98F0008BC6A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3AB89D45CD6E7AB5C831ED2A /* Pods_UIKitCoordinator_UIKitCoordinatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitCoordinator_UIKitCoordinatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		541127D30F78FF6E8C722E14 /* Pods-UIKitCoordinatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCoordinatorTests.release.xcconfig"; path = "Target Support Files/Pods-UIKitCoordinatorTests/Pods-UIKitCoordinatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		61C1CBE310301229844FADE3 /* Pods-UIKitCoordinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCoordinator.debug.xcconfig"; path = "Target Support Files/Pods-UIKitCoordinator/Pods-UIKitCoordinator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,7 +76,7 @@
 		647875C52CE48E03007A804B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		647875C82CE49CB6007A804B /* TestingRXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingRXViewController.swift; sourceTree = "<group>"; };
 		647875C92CE49CB6007A804B /* TestingRXViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestingRXViewController.xib; sourceTree = "<group>"; };
-		647E3D142CE7239900AA9795 /* UICapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICapsuleButton.swift; sourceTree = "<group>"; };
+		647E3D142CE7239900AA9795 /* UIButtonCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCapsule.swift; sourceTree = "<group>"; };
 		647F05102CE33CF700DFF39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		647F05112CE33CF700DFF39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		647F05132CE33CF700DFF39A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +140,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1FE6F1C82CE7AA610008BC6A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6F1C92CE7AA760008BC6A /* AuthRepository.swift */,
+				1FE6F1CE2CE7AF010008BC6A /* Models */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1FE6F1CB2CE7AB280008BC6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6F1CC2CE7AB370008BC6A /* BaseResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FE6F1CE2CE7AF010008BC6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6F1CF2CE7AF120008BC6A /* AuthRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FE6F1D32CE8EFCE0008BC6A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6F1D42CE8F02F0008BC6A /* UITabBarViewController.swift */,
+				1FE6F1D52CE8F02F0008BC6A /* UITabBarViewController.xib */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		44E8292536C773354D6CE2D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +218,7 @@
 		646A7CE52CE4890C0003E2AD /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				1FE6F1C82CE7AA610008BC6A /* Repository */,
 				64DCFA7D2CE74CD500151C9A /* Local */,
 				647875C62CE48E03007A804B /* Network */,
 			);
@@ -197,6 +248,7 @@
 		647F05162CE33CF700DFF39A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1FE6F1DC2CE8F8E30008BC6A /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				64DCFA762CE7494F00151C9A /* Constants.swift */,
+				1FE6F1C62CE7A4350008BC6A /* DeviceManagerr.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,8 +265,9 @@
 		647F05182CE33CF700DFF39A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				647E3D142CE7239900AA9795 /* UICapsuleButton.swift */,
+				647E3D142CE7239900AA9795 /* UIButtonCapsule.swift */,
 				647F05462CE34AEF00DFF39A /* BottomRoundedView.swift */,
+				1FE6F1DE2CE8F98F0008BC6A /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -276,6 +330,7 @@
 		647F05232CE33CF700DFF39A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1FE6F1D32CE8EFCE0008BC6A /* Tabbar */,
 				646A7CDB2CE4801B0003E2AD /* TestingRX */,
 				647F05222CE33CF700DFF39A /* Login */,
 			);
@@ -294,6 +349,7 @@
 		647F05272CE33CF700DFF39A /* UIKitCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				1FE6F1CB2CE7AB280008BC6A /* Models */,
 				646A7CE52CE4890C0003E2AD /* Data */,
 				647F05152CE33CF700DFF39A /* App */,
 				647F05192CE33CF700DFF39A /* Common */,
@@ -445,6 +501,7 @@
 				64FAC9B12CE7109700B7E228 /* LoginViewController.xib in Resources */,
 				647F05282CE33CF700DFF39A /* LaunchScreen.storyboard in Resources */,
 				647F05292CE33CF700DFF39A /* Assets.xcassets in Resources */,
+				1FE6F1D72CE8F02F0008BC6A /* UITabBarViewController.xib in Resources */,
 				647875CB2CE49CB6007A804B /* TestingRXViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,19 +630,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647E3D152CE723AE00AA9795 /* UICapsuleButton.swift in Sources */,
+				647E3D152CE723AE00AA9795 /* UIButtonCapsule.swift in Sources */,
 				647875CA2CE49CB6007A804B /* TestingRXViewController.swift in Sources */,
 				647F052B2CE33CF700DFF39A /* AppDelegate.swift in Sources */,
+				1FE6F1DF2CE8F98F0008BC6A /* LoadingView.swift in Sources */,
 				647F052C2CE33CF700DFF39A /* SceneDelegate.swift in Sources */,
 				64DCFA7E2CE74CD500151C9A /* KeychainManager.swift in Sources */,
 				647F05472CE34AEF00DFF39A /* BottomRoundedView.swift in Sources */,
 				647875C72CE48E03007A804B /* NetworkService.swift in Sources */,
 				647F052E2CE33CF700DFF39A /* AppCoordinator.swift in Sources */,
 				647F052F2CE33CF700DFF39A /* AuthCoordinator.swift in Sources */,
+				1FE6F1CD2CE7AB370008BC6A /* BaseResponse.swift in Sources */,
 				647F05302CE33CF700DFF39A /* Coordinator.swift in Sources */,
 				64FAC9B32CE71BCD00B7E228 /* LoginViewController.swift in Sources */,
+				1FE6F1C72CE7A4350008BC6A /* DeviceManagerr.swift in Sources */,
 				647F05312CE33CF700DFF39A /* LoginViewModel.swift in Sources */,
+				1FE6F1CA2CE7AA760008BC6A /* AuthRepository.swift in Sources */,
 				64DCFA772CE7495000151C9A /* Constants.swift in Sources */,
+				1FE6F1D62CE8F02F0008BC6A /* UITabBarViewController.swift in Sources */,
+				1FE6F1D02CE7AF120008BC6A /* AuthRequest.swift in Sources */,
+				1FE6F1DD2CE8F8E30008BC6A /* UIViewController+Extension.swift in Sources */,
 				64DCFA732CE7454B00151C9A /* ApiEndpoint.swift in Sources */,
 				64DCFA752CE746BA00151C9A /* SessionManager.swift in Sources */,
 			);

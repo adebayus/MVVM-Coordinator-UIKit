@@ -8,19 +8,19 @@
 
 enum ApiEndpoint {
     
-    static let baseURL = "https://cels.mediainovasi.id"
+    static let baseURL = "https://cels-api.mediainovasi.id"
     
     case postAuth
     case getAuth(id: Int)
     
     var path: String {
         switch self {
-        case .postAuth: "/auth"
+        case .postAuth: "/auth/login"
         case .getAuth(id: let id): "/auth/\(id)"
         }
     }
     
     var url: String {
-        return ApiEndpoint.baseURL + path
+        return ApiEndpoint.baseURL + "/api" + path
     }
 }

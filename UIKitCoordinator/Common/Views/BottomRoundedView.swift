@@ -29,7 +29,7 @@ class BottomRoundedView: UIView {
     }
     
     private func setupView() {
-        self.backgroundColor = .clear
+        self.backgroundColor = .white
         self.layer.insertSublayer(shapeLayer, at: 0) // Add shape layer once
     }
     

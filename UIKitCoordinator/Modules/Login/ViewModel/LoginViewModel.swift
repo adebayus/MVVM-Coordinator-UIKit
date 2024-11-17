@@ -14,10 +14,14 @@ enum ErrorForm {
 
 class LoginViewModel {
     
+    let bag = DisposeBag()
     var coordinator: AuthCoordinator!
+    var authRepository: AuthRepository!
     
     var emailText = BehaviorSubject<String>(value: "")
     var passwordText = BehaviorSubject<String>(value: "")
+    
+    var isLoading = BehaviorSubject<Bool>(value: false)
     
     var isValidEmail: Observable<ErrorForm?> {
         return emailText
@@ -47,6 +51,39 @@ class LoginViewModel {
         if let url = URL(string: "https://cels.mediainovasi.id/Account/ForgotPassword") {
             UIApplication.shared.open(url)
         }
+    }
+    
+    
+    func submit() {
+        guard let email = try? emailText.value(), let password = try? passwordText.value() else { return }
+        
+        print("[submit]", email, password)
+        let metadata = DeviceManager.shared.getMetadataDevice()
+        
+        let request = AuthRequest(
+            email: email,
+            password: password,
+            metadata: metadata
+        )
+        
+        isLoading.onNext(true)
+        
+        authRepository.auth(request: request)
+            .observe(on: MainScheduler.instance)
+            .subscribe(
+                onNext: { response in
+                    print("[auth] -", response)
+                },
+                onError: { error in
+                    print("[auth] -", error)
+                    self.isLoading.onNext(false)
+                }, onCompleted: {
+                    print("[auth] -", "onCompleted")
+                    self.isLoading.onNext(false)
+                }
+                
+            )
+            .disposed(by: bag)
     }
     
 }
