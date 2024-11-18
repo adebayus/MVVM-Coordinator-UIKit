@@ -13,14 +13,15 @@ struct BaseResponse<T: Codable>: Codable {
     var success: Bool?
     var message: String?
     var data: T?
-    var errors: [BaseErrorResponse]?
+    var errors: [ErrorResponse]?
 }
 
-struct LoginResponse: Codable {
-    var token: String?
-}
-
-struct BaseErrorResponse: Codable {
+struct ErrorResponse: Codable {
     var path: String?
     var message: String?
 }
+
+struct LoginResponse: Codable {
+    var token: Int?
+}
+

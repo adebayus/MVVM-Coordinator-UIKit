@@ -41,5 +41,24 @@ extension UIViewController {
         }
         return nil
     }
+    
+    @discardableResult
+    func showToast(message: String, style: ToastStyle = .error ) -> ToastView {
+        let toast = ToastView(
+            message: message,
+            style: style
+        )
+        toast.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(toast)
+        NSLayoutConstraint.activate([
+            toast.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            toast.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            toast.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor, constant: 20),
+            toast.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor, constant: -20)
+        ])
+        
+        return toast
+    }
+
 }
 

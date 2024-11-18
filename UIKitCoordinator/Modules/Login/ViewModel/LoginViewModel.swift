@@ -6,6 +6,7 @@
 //
 
 import RxSwift
+import SwiftKeychainWrapper
 
 enum ErrorForm {
     case emptyText
@@ -20,8 +21,8 @@ class LoginViewModel {
     
     var emailText = BehaviorSubject<String>(value: "")
     var passwordText = BehaviorSubject<String>(value: "")
-    
     var isLoading = BehaviorSubject<Bool>(value: false)
+    var error = BehaviorSubject<Error?>(value: nil)
     
     var isValidEmail: Observable<ErrorForm?> {
         return emailText
@@ -39,6 +40,10 @@ class LoginViewModel {
             .map { value in
                 return value.isEmpty ? .emptyText : nil
             }.distinctUntilChanged()
+    }
+    
+    private func storeToken(token: String) {
+        KeychainManager.shared.setToken(value: token)
     }
     
     func isValidEmailFormat(_ email: String) -> Bool {
@@ -72,11 +77,17 @@ class LoginViewModel {
             .observe(on: MainScheduler.instance)
             .subscribe(
                 onNext: { response in
-                    print("[auth] -", response)
+                    
+                    if let token = response.data?.token {
+//                        self.storeToken(token: token)
+                        self.coordinator.goToTabBar()
+                    }
+                    
                 },
                 onError: { error in
                     print("[auth] -", error)
                     self.isLoading.onNext(false)
+                    self.error.onNext(error)
                 }, onCompleted: {
                     print("[auth] -", "onCompleted")
                     self.isLoading.onNext(false)

@@ -23,6 +23,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgetPasswordLabel: UILabel!
     @IBOutlet weak var submitButton: UIButtonCapsule!
     
+    var toast: ToastView = ToastView(message: "testingg")
+    
     var disposeBag = DisposeBag()
     var viewModel: LoginViewModel!
     
@@ -103,6 +105,13 @@ class LoginViewController: UIViewController {
                 }
             ).disposed(by: disposeBag)
         
+        viewModel.error
+            .skip(1)
+            .subscribe(
+                onNext: { value in
+                    
+                }
+            ).disposed(by: disposeBag)
     }
     
     func updateErrorTF(

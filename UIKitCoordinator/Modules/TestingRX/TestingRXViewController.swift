@@ -20,6 +20,8 @@ class TestingRXViewController: UIViewController {
         viewModel.fetchTodo()
         setupBind()
         testing()
+
+        print(self.view.subviews, "list subview")
         // Do any additional setup after loading the view.
     }
     
@@ -28,11 +30,12 @@ class TestingRXViewController: UIViewController {
             onNext: { response in
                 print(response, "kwokwowk")
             }
-        )
+        ).disposed(by: disposeBag)
         
         viewModel.error.subscribe(onNext: { error in
             print(error, "error")
-        })
+        }).disposed(by: disposeBag)
+        
         
         
     }
@@ -58,21 +61,20 @@ class TestingRXViewController: UIViewController {
             onCompleted: {
                 print("completed", "observable-")
             }
-            
-        )
+        ).disposed(by: disposeBag)
         
         
         observable2.subscribe(onNext: { value in
             print(value, "observable2-")
-        })
+        }).disposed(by: disposeBag)
         
         observable3.subscribe(onNext: { value in
             print(value, "observable3-")
-        })
+        }).disposed(by: disposeBag)
         
         observable4.subscribe(onNext: { value in
             print(value, "observable4-")
-        })
+        }).disposed(by: disposeBag)
         
         observableVoid.subscribe(
             onNext: { value in
@@ -82,7 +84,7 @@ class TestingRXViewController: UIViewController {
                 print("completed", "observable5-")
             }
             
-        )
+        ).disposed(by: disposeBag)
         
         observable6
            .subscribe(onNext: { i in
@@ -95,7 +97,7 @@ class TestingRXViewController: UIViewController {
              )
 
              print(fibonacci, "observable6-")
-         })
+         }).disposed(by: disposeBag)
         
         Observable<String>.create { observer in
           // 1

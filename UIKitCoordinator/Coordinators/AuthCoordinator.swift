@@ -20,7 +20,8 @@ class AuthCoordinator: Coordinator {
     }
     
     func start() {
-        if let token = KeychainManager.shared.getToken() {
+        
+        if let _ = KeychainManager.shared.getToken() {
             goToTabBar()
         } else {
             goToLogin()
@@ -55,4 +56,12 @@ class AuthCoordinator: Coordinator {
         )
     }
     
+    func gotoTesting() {
+        let vc = TestingRXViewController(nibName: "TestingRXViewController", bundle: nil)
+        let vm = TodosViewModel()
+//        vm.coordinator = self
+        
+        vc.viewModel = vm
+        self.navigationController.pushViewController(vc, animated: true)
+    }
 }

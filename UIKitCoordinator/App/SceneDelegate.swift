@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -22,7 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navController = UINavigationController()
         appCoordinator = AppCoordinator(navigationController: navController)
         appCoordinator?.start()
-
+        
+        KeychainWrapper.standard.removeAllKeys()
         self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()
 
