@@ -12,7 +12,7 @@ struct BaseResponse<T: Codable>: Codable {
     var status: Int?
     var success: Bool?
     var message: String?
-    var data: T?
+    var data: T
     var errors: [ErrorResponse]?
 }
 
@@ -22,6 +22,6 @@ struct ErrorResponse: Codable {
 }
 
 struct LoginResponse: Codable {
-    var token: Int?
+    var token: String?
 }
 

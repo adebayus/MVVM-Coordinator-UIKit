@@ -278,7 +278,6 @@
 		647F05192CE33CF700DFF39A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				649CCE0F2CE5A7CB0055A7E6 /* Fonts */,
 				647F05162CE33CF700DFF39A /* Extensions */,
 				647F05172CE33CF700DFF39A /* Helpers */,
 				647F05182CE33CF700DFF39A /* Views */,
@@ -343,6 +342,7 @@
 		647F05262CE33CF700DFF39A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				649CCE0F2CE5A7CB0055A7E6 /* Fonts */,
 				647F05242CE33CF700DFF39A /* Assets.xcassets */,
 				647F05252CE33CF700DFF39A /* Info.plist */,
 			);

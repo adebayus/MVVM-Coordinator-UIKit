@@ -108,8 +108,12 @@ class LoginViewController: UIViewController {
         viewModel.error
             .skip(1)
             .subscribe(
-                onNext: { value in
+                onNext: { error in
                     
+                    if let error = error {
+                        self.showAlert(type: error)
+                    }
+                   
                 }
             ).disposed(by: disposeBag)
     }
@@ -128,12 +132,57 @@ class LoginViewController: UIViewController {
         
     }
     
+    private func showAlert(type: Error) {
+        
+        let alertVC = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(
+            title: "Ok",
+            style: .default,
+            handler: { _ in
+                alertVC.dismiss(animated: true)
+            }
+        )
+        
+        if let appError = type as? AppError {
+            switch appError {
+            case .notFound(message: _, errors: _):
+                
+                alertVC.title = "Cant Find Account"
+                alertVC.message = "We cant find an account, try another email or you can inform issue to admin."
+                
+                alertVC.addAction(okAction)
+                
+                break
+            case .badRequest(message: _, errors: let error):
+                
+                
+                if !error.isEmpty {
+                    alertVC.title = "The form cannot be empty."
+                    alertVC.message = "Please ensure all fields are filled out."
+                    
+                } else {
+                    
+                    alertVC.title = "Incorrect Password."
+                    alertVC.message = "The password you entered is incorrect. Please try again or reset your password if you've forgotten it."
+                }
+                
+                alertVC.addAction(okAction)
+                
+                break
+            default:
+                break
+            }
+            
+        }
+        
+        self.present(alertVC, animated: true)
+    }
     
     private func setupNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-    
     
     @IBAction func submitAction(_ sender: Any) {
         //        print(viewModel.getEmailText())

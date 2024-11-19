@@ -10,7 +10,7 @@ import RxSwift
 import Alamofire
 
 protocol AuthRepositoryProtocol {
-    func auth(request: AuthRequest) -> Observable<BaseResponse<LoginResponse>>
+    func auth(request: AuthRequest) -> Observable<LoginResponse?>
 }
 
 class AuthRepository: AuthRepositoryProtocol {
@@ -23,7 +23,7 @@ class AuthRepository: AuthRepositoryProtocol {
     
     func auth(
         request: AuthRequest
-    ) -> RxSwift.Observable<BaseResponse<LoginResponse>> {
+    ) -> RxSwift.Observable<LoginResponse?> {
         print("[request]", request)
         let paramaters: Parameters = [
             "email": request.email,

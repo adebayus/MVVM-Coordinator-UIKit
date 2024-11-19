@@ -78,8 +78,8 @@ class LoginViewModel {
             .subscribe(
                 onNext: { response in
                     
-                    if let token = response.data?.token {
-//                        self.storeToken(token: token)
+                    if let token = response?.token {
+                        self.storeToken(token: token)
                         self.coordinator.goToTabBar()
                     }
                     
@@ -98,3 +98,5 @@ class LoginViewModel {
     }
     
 }
+
+

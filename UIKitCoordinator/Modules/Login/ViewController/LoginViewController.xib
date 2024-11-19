@@ -35,17 +35,17 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjU-b5-EAB" customClass="BottomRoundedView" customModule="UIKitCoordinator" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-M6-uMo">
-                                    <rect key="frame" x="131.33333333333334" y="29.999999999999996" width="112.66666666666666" height="32.666666666666657"/>
-                                    <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="24"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-EO-rQy">
-                                    <rect key="frame" x="102.66666666666669" y="87.666666666666657" width="170" height="135"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-EO-rQy">
+                                    <rect key="frame" x="102.66666666666669" y="24.666666666666671" width="170" height="192.66666666666663"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-M6-uMo">
+                                            <rect key="frame" x="28.666666666666664" y="0.0" width="112.66666666666669" height="32.666666666666664"/>
+                                            <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_cure_white_home" translatesAutoresizingMaskIntoConstraints="NO" id="uCJ-OU-8S6">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="135"/>
+                                            <rect key="frame" x="0.0" y="57.666666666666671" width="170" height="135"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="135" id="5kD-3C-6QQ"/>
                                                 <constraint firstAttribute="width" constant="170" id="zfA-P2-6et"/>
@@ -56,14 +56,11 @@
                             </subviews>
                             <color key="backgroundColor" name="background_primary"/>
                             <constraints>
-                                <constraint firstItem="zpY-M6-uMo" firstAttribute="top" secondItem="zjU-b5-EAB" secondAttribute="top" constant="30" id="1Jk-76-U4n"/>
                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lo9-EO-rQy" secondAttribute="bottom" constant="5" id="Dmb-ep-ACT"/>
-                                <constraint firstItem="zpY-M6-uMo" firstAttribute="centerX" secondItem="zjU-b5-EAB" secondAttribute="centerX" id="GG4-n5-att"/>
-                                <constraint firstItem="zpY-M6-uMo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zjU-b5-EAB" secondAttribute="leading" constant="131" id="LCy-b0-MSz"/>
+                                <constraint firstItem="Lo9-EO-rQy" firstAttribute="centerY" secondItem="zjU-b5-EAB" secondAttribute="centerY" constant="-20" id="FFJ-5a-Sed"/>
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lo9-EO-rQy" secondAttribute="trailing" constant="5" id="WUK-d1-aLb"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zpY-M6-uMo" secondAttribute="trailing" constant="131" id="XZx-xc-s5M"/>
-                                <constraint firstItem="Lo9-EO-rQy" firstAttribute="top" secondItem="zpY-M6-uMo" secondAttribute="bottom" constant="25" id="ibg-Hb-Cmx"/>
                                 <constraint firstItem="Lo9-EO-rQy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zjU-b5-EAB" secondAttribute="leading" constant="5" id="ikH-1D-Ctr"/>
+                                <constraint firstItem="Lo9-EO-rQy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zjU-b5-EAB" secondAttribute="top" constant="10" id="jj7-us-vfi"/>
                                 <constraint firstItem="Lo9-EO-rQy" firstAttribute="centerX" secondItem="zjU-b5-EAB" secondAttribute="centerX" id="ync-D2-k10"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>

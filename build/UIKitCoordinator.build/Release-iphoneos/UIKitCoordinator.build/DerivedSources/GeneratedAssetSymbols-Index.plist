@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameBackgroundPrimary</string>
+			<key>relativePath</key>
+			<string>./Colors/background_primary.colorset</string>
+			<key>swiftSymbol</key>
+			<string>backgroundPrimary</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameBackgroundPrimaryDisabled</string>
+			<key>relativePath</key>
+			<string>./Colors/background_primary_disabled.colorset</string>
+			<key>swiftSymbol</key>
+			<string>backgroundPrimaryDisabled</string>
+		</dict>
+	</array>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIconChatabDefault</string>
+			<key>relativePath</key>
+			<string>./Images/images_tabbar/icon_chatab_default.imageset</string>
+			<key>swiftSymbol</key>
+			<string>iconChatabDefault</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIconDashboardtabDefault</string>
+			<key>relativePath</key>
+			<string>./Images/images_tabbar/icon_dashboardtab_default.imageset</string>
+			<key>swiftSymbol</key>
+			<string>iconDashboardtabDefault</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameImageCureWhiteHome</string>
+			<key>relativePath</key>
+			<string>./Images/image_cure_white_home.imageset</string>
+			<key>swiftSymbol</key>
+			<string>imageCureWhiteHome</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

@@ -1,0 +1,130 @@
+{
+  "" : {
+    "const-values" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIKitCoordinator-master.swiftconstvalues",
+    "dependencies" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIKitCoordinator-master.d",
+    "diagnostics" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIKitCoordinator-master.dia",
+    "emit-module-dependencies" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIKitCoordinator-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIKitCoordinator-master-emit-module.dia",
+    "swift-dependencies" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIKitCoordinator-master.swiftdeps"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/App/AppDelegate.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/App/SceneDelegate.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/SceneDelegate.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Common/Extensions/UIViewController+Extension.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIViewController+Extension.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIViewController+Extension.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIViewController+Extension.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Common/Helpers/Constants.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/Constants.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/Constants.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/Constants.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Common/Helpers/DeviceManagerr.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/DeviceManagerr.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/DeviceManagerr.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/DeviceManagerr.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Common/Views/BottomRoundedView.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/BottomRoundedView.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/BottomRoundedView.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/BottomRoundedView.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Common/Views/LoadingView.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoadingView.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoadingView.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoadingView.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Common/Views/ToastView.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/ToastView.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/ToastView.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/ToastView.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Common/Views/UIButtonCapsule.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIButtonCapsule.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIButtonCapsule.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UIButtonCapsule.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Coordinators/AppCoordinator.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AppCoordinator.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AppCoordinator.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AppCoordinator.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Coordinators/AuthCoordinator.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthCoordinator.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthCoordinator.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthCoordinator.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Coordinators/Coordinator.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/Coordinator.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/Coordinator.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/Coordinator.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Data/Local/KeychainManager.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/KeychainManager.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/KeychainManager.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/KeychainManager.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Data/Network/ApiEndpoint.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/ApiEndpoint.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/ApiEndpoint.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/ApiEndpoint.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Data/Network/NetworkService.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/NetworkService.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/NetworkService.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/NetworkService.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Data/Network/SessionManager.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/SessionManager.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/SessionManager.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/SessionManager.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Data/Repository/AuthRepository.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthRepository.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthRepository.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthRepository.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Data/Repository/Models/AuthRequest.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthRequest.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthRequest.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/AuthRequest.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Models/BaseResponse.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/BaseResponse.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/BaseResponse.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/BaseResponse.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Modules/Login/ViewController/LoginViewController.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoginViewController.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoginViewController.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoginViewController.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Modules/Login/ViewModel/LoginViewModel.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoginViewModel.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoginViewModel.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/LoginViewModel.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Modules/Tabbar/UITabBarViewController.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UITabBarViewController.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UITabBarViewController.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/UITabBarViewController.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/UIKitCoordinator/Modules/TestingRX/TestingRXViewController.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/TestingRXViewController.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/TestingRXViewController.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/TestingRXViewController.o"
+  },
+  "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/macbookairmii/Desktop/UIKitCoordinator/build/UIKitCoordinator.build/Release-iphoneos/UIKitCoordinator.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}
