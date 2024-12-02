@@ -16,6 +16,7 @@
 		1FE6F1DD2CE8F8E30008BC6A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1DC2CE8F8E30008BC6A /* UIViewController+Extension.swift */; };
 		1FE6F1DF2CE8F98F0008BC6A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6F1DE2CE8F98F0008BC6A /* LoadingView.swift */; };
 		3631865EE91EE2D3D9A23B9F /* Pods_UIKitCoordinatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9787B59747D4C31615F65867 /* Pods_UIKitCoordinatorTests.framework */; };
+		642B20C82CFDBA6A006825A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 642B20C72CFDBA69006825A8 /* GoogleService-Info.plist */; };
 		6435EA5B2CEAE37900EFA523 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6435EA5A2CEAE37900EFA523 /* ToastView.swift */; };
 		647875C72CE48E03007A804B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647875C52CE48E03007A804B /* NetworkService.swift */; };
 		647875CA2CE49CB6007A804B /* TestingRXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647875C82CE49CB6007A804B /* TestingRXViewController.swift */; };
@@ -71,6 +72,7 @@
 		3AB89D45CD6E7AB5C831ED2A /* Pods_UIKitCoordinator_UIKitCoordinatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitCoordinator_UIKitCoordinatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		541127D30F78FF6E8C722E14 /* Pods-UIKitCoordinatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCoordinatorTests.release.xcconfig"; path = "Target Support Files/Pods-UIKitCoordinatorTests/Pods-UIKitCoordinatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		61C1CBE310301229844FADE3 /* Pods-UIKitCoordinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCoordinator.debug.xcconfig"; path = "Target Support Files/Pods-UIKitCoordinator/Pods-UIKitCoordinator.debug.xcconfig"; sourceTree = "<group>"; };
+		642B20C72CFDBA69006825A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6435EA5A2CEAE37900EFA523 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		645A65B52CE1B0AF00173986 /* UIKitCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645A65CB2CE1B0B100173986 /* UIKitCoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitCoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,6 +344,7 @@
 		647F05262CE33CF700DFF39A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				642B20C72CFDBA69006825A8 /* GoogleService-Info.plist */,
 				649CCE0F2CE5A7CB0055A7E6 /* Fonts */,
 				647F05242CE33CF700DFF39A /* Assets.xcassets */,
 				647F05252CE33CF700DFF39A /* Info.plist */,
@@ -506,6 +509,7 @@
 				647F05292CE33CF700DFF39A /* Assets.xcassets in Resources */,
 				1FE6F1D72CE8F02F0008BC6A /* UITabBarViewController.xib in Resources */,
 				647875CB2CE49CB6007A804B /* TestingRXViewController.xib in Resources */,
+				642B20C82CFDBA6A006825A8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
