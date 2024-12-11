@@ -145,34 +145,34 @@ class LoginViewController: UIViewController {
         )
         
         if let appError = type as? AppError {
-            switch appError {
-            case .notFound(message: _, errors: _):
-                
-                alertVC.title = "Cant Find Account"
-                alertVC.message = "We cant find an account, try another email or you can inform issue to admin."
-                
-                alertVC.addAction(okAction)
-                
-                break
-            case .badRequest(message: _, errors: let error):
-                
-                
-                if !error.isEmpty {
-                    alertVC.title = "The form cannot be empty."
-                    alertVC.message = "Please ensure all fields are filled out."
-                    
-                } else {
-                    
-                    alertVC.title = "Incorrect Password."
-                    alertVC.message = "The password you entered is incorrect. Please try again or reset your password if you've forgotten it."
-                }
-                
-                alertVC.addAction(okAction)
-                
-                break
-            default:
-                break
-            }
+//            switch appError {
+//            case .notFound(message: _, errors: _):
+//                
+//                alertVC.title = "Cant Find Account"
+//                alertVC.message = "We cant find an account, try another email or you can inform issue to admin."
+//                
+//                alertVC.addAction(okAction)
+//                
+//                break
+//            case .badRequest(message: _, errors: let error):
+//                
+//                
+//                if !error.isEmpty {
+//                    alertVC.title = "The form cannot be empty."
+//                    alertVC.message = "Please ensure all fields are filled out."
+//                    
+//                } else {
+//                    
+//                    alertVC.title = "Incorrect Password."
+//                    alertVC.message = "The password you entered is incorrect. Please try again or reset your password if you've forgotten it."
+//                }
+//                
+//                alertVC.addAction(okAction)
+//                
+//                break
+//            default:
+//                break
+//            }
             
         }
         

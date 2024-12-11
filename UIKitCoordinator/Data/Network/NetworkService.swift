@@ -10,18 +10,27 @@ import Alamofire
 import RxSwift
 import RxRelay
 
-enum AppError: Error {
-//    case validationError(statusCode: Int, errors: [ErrorResponse])
-//    case errorMsg(statusCode: Int, errorMsg: String)
-    case errorDecode(statusCode: Int, errorMsg: String)
-    case notFound(message: String, errors: [ErrorResponse])
-    case badRequest(message: String, errors: [ErrorResponse])
-    case nilData
+struct AppErrorModel {
+    let statusCode: Int
+    let message: String?
+    let errorList: [ErrorResponse]?
 }
 
-//enum AuthError: Error {
-//    case
-//}
+enum AppError: Error {
+    
+    case notFound(error: AppErrorModel)
+    case badRequest(error: AppErrorModel)
+    case serverError(error: AppErrorModel)
+    case clientSide(error: AppErrorModel)
+    
+    enum AuthError: Error {
+        case limit
+        case notAutorized
+        case invalidCrendential
+    }
+}
+
+
 
 class NetworkService {
     
@@ -34,7 +43,7 @@ class NetworkService {
         method: HTTPMethod = .get,
         paramaters: Parameters? = nil,
         encoding: any ParameterEncoding = URLEncoding.default
-    ) -> Observable<T> {
+    ) -> Observable<T?> {
         debugPrint(endpoint.url, T.self, "testinggg12")
         return Observable.create { observer in
             let request = SessionManager.shared.request(
@@ -46,8 +55,6 @@ class NetworkService {
                 .responseDecodable(of: BaseResponse<T>.self) { response in
                     
                     let statusCode = response.response?.statusCode ?? 0
-                
-                    print(response, "[response]--")
                     
                     switch response.result {
                     case .success(let value):
@@ -58,17 +65,38 @@ class NetworkService {
                             return
                         }
                         
+                        let errorModel: AppErrorModel = .init(statusCode: statusCode, message: value.message, errorList: value.errors)
                         switch statusCode {
+                        case 401:
+                            let message = value.message
+                            
+                            if message?.contains("limit") ?? false {
+                                observer.onError(AppError.AuthError.limit)
+                            } else if message?.contains("credentials") ?? false {
+                                observer.onError(AppError.AuthError.invalidCrendential)
+                            } else {
+                                observer.onError(AppError.AuthError.notAutorized)
+                            }
+                            
+                            observer.onCompleted()
+                            
+                            break
                         case 400:
-                            observer.onError(AppError.badRequest(message: value.message ?? "Bad Request", errors: value.errors ?? []))
+                            observer.onError(AppError.badRequest(error: errorModel))
                             break
                         case 404:
-                            observer.onError(AppError.notFound(message: value.message ?? "Data Not Found", errors: value.errors ?? []))
+                            observer.onError(AppError.notFound(error: errorModel))
+                            break
+                        case 400...499:
+                            observer.onError(AppError.clientSide(error: errorModel))
+                            break
+                        case 500...599:
+                            observer.onError(AppError.serverError(error: errorModel))
                             break
                         default:
                             break
                         }
-                       
+                        
                         break
                     case .failure(let error):
                         observer.onError(error)
@@ -88,8 +116,8 @@ class NetworkService {
 
 
 protocol TodoRepositoryProtocol {
-    func fetchTodos() -> Observable<[Todo]>
-    func fetchDetail(id: Int) -> Observable<Todo>
+    func fetchTodos() -> Observable<[Todo]?>
+    func fetchDetail(id: Int) -> Observable<Todo?>
 }
 
 class TodoRepository: TodoRepositoryProtocol {
@@ -100,11 +128,11 @@ class TodoRepository: TodoRepositoryProtocol {
         self.networkService = networkService
     }
     
-    func fetchTodos() -> RxSwift.Observable<[Todo]> {
+    func fetchTodos() -> RxSwift.Observable<[Todo]?> {
         return networkService.request(.postAuth)
     }
     
-    func fetchDetail(id: Int) -> RxSwift.Observable<Todo> {
+    func fetchDetail(id: Int) -> RxSwift.Observable<Todo?> {
         return networkService.request(.getAuth(id: id))
     }
 }
@@ -133,7 +161,10 @@ class TodosViewModel {
             .observe(on: MainScheduler.instance)
             .subscribe(
                 onNext: { [weak self] items in
-                    self?.items.accept(items)
+                    if let items = items {
+                        self?.items.accept(items)
+                    }
+
                 },
                 onError: { [weak self] error in
                     self?.error.onNext(error.localizedDescription)
