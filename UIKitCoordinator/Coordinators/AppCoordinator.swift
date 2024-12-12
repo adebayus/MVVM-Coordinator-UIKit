@@ -30,5 +30,7 @@ class AppCoordinator: Coordinator {
         authCoor.start()
     }
     
-    
+    func goToChatting(){
+        
+    }
 }

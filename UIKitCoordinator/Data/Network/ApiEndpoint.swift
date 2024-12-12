@@ -8,7 +8,7 @@
 
 enum ApiEndpoint {
     
-    static let baseURL = "https://cels-api.mediainovasi.id"
+    static let baseURL = "https://cure-api.mediainovasi.id"
     
     case postAuth
     case getAuth(id: Int)

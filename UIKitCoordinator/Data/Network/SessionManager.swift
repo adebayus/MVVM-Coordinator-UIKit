@@ -47,10 +47,10 @@ final class SessionInterceptor: RequestInterceptor {
         headerRequest.setValue("application/json", forHTTPHeaderField: "Accept")
         headerRequest.setValue("\(Constants.API_KEY)", forHTTPHeaderField: "x-api-key")
         
-//        if let token = KeychainManager.shared.getToken() {
-        headerRequest.setValue("Bearer \(Constants.testingToken)", forHTTPHeaderField: "Authorization")
-//        }
-
+        if let token = KeychainManager.shared.getToken() {
+        headerRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        }
+        
         completion(.success(headerRequest))
         
     }

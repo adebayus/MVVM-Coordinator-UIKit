@@ -46,14 +46,13 @@ class AuthCoordinator: Coordinator {
     }
     
     func goToTabBar() {
-        let vc = UITabBarViewController(nibName: "UITabBarViewController", bundle: nil)
+        
         let viewModel = UITabBarViewModel()
         viewModel.coordinator = self
-        
-        navigationController.pushViewController(
-            vc,
-            animated: true
-        )
+        let vc = TaBarViewController(viewModel: viewModel)
+       
+        navigationController.setViewControllers([vc], animated: true)
+        print(vc.navigationController?.viewControllers, "lol")
     }
     
     func gotoTesting() {
