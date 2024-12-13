@@ -16,9 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        if #available(iOS 13, *) {
-            return true
-        }
+        setupStyleNavigationBar()
           
         self.window = UIWindow(frame: UIScreen.main.bounds )
         
@@ -51,3 +49,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+func setupStyleNavigationBar() {
+    if #available(iOS 13.0, *) {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .backgroundPrimary
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+    } else {
+        // Fallback on earlier versions
+        let navigationBar = UINavigationBar.appearance()
+        navigationBar.tintColor = UIColor.systemBlue
+        navigationBar.tintColor = UIColor.white
+    }
+}

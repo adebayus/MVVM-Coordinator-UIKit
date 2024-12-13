@@ -18,6 +18,11 @@ class TaBarViewController: UITabBarController {
         customizeTabBar()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     init(viewModel: UITabBarViewModel!) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -40,6 +45,16 @@ class TaBarViewController: UITabBarController {
                     selectedImage: item.selectedImage
                 )
             vc.tabBarItem = tabBar
+            
+            if let vc = vc as? ListChatTabVC {
+                
+                let chatListCoordinator = ChatListCoordinator(navigationController: viewModel.coordinator.navigationController)
+                let viewModel = ListChatTabViewModel()
+                
+                viewModel.coordinator = chatListCoordinator
+                vc.viewModel = viewModel
+            }
+            
             let navController = UINavigationController(rootViewController: vc)
             listVC.append(navController)
         }

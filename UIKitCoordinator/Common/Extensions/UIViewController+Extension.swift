@@ -14,7 +14,6 @@ extension UIViewController {
         let loadingView = LoadingView()
         loadingView.translatesAutoresizingMaskIntoConstraints =  false
         
-//        let view = self.view
         self.view?.addSubview(loadingView)
         loadingView.isHidden = false
         NSLayoutConstraint.activate([
@@ -59,6 +58,39 @@ extension UIViewController {
         
         return toast
     }
-
+    
+    func setupCustomNavigationBar(type: TypeSetupCustomAppBar) {
+        switch type {
+        case .back:
+            let btnItem = UIBarButtonItem(customView: CustomBackButton())
+            self.navigationItem.leftBarButtonItem = btnItem
+            break
+        }
+    }
 }
 
+enum TypeSetupCustomAppBar {
+    case back
+}
+
+class CustomBackButton: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setupView()
+    }
+    
+    private func setupView() {
+        let imageBack = UIImage(named: "chevron.left")!
+        setTitle("Back", for: .normal)
+        setImage(imageBack, for: .normal)
+        
+        imageEdgeInsets = UIEdgeInsets(top: 0, left: -16, bottom: 0, right: 0)
+        titleEdgeInsets = UIEdgeInsets(top: 0, left: -7, bottom: 0, right: 0)
+    }
+}
