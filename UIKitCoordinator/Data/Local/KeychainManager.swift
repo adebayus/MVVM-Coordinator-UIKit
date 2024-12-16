@@ -12,6 +12,7 @@ import SwiftKeychainWrapper
 extension KeychainWrapper.Key {
     static let todo: KeychainWrapper.Key = "TODO"
     static let token: KeychainWrapper.Key = "TOKEN"
+    static let userDetail: KeychainWrapper.Key = "USER_DETAIL"
 }
 
 final class KeychainManager {
@@ -35,6 +36,17 @@ final class KeychainManager {
     func getTodo() -> Todo? {
         guard let data: Data = KeychainWrapper.standard[.todo] else { return nil }
         guard let decoded = decode(json: data, as: Todo.self) else { return nil }
+        return decoded
+    }
+    
+    func setUserDetail(value: DetailUserResponseModel?) {
+        guard let value = value, let encode = encode(object: value)  else { return }
+        KeychainWrapper.standard[.userDetail] = encode
+    }
+    
+    func getUserDetail() -> DetailUserResponseModel? {
+        guard let data: Data = KeychainWrapper.standard[.userDetail] else { return nil }
+        guard let decoded = decode(json: data, as: DetailUserResponseModel.self) else { return nil }
         return decoded
     }
 }

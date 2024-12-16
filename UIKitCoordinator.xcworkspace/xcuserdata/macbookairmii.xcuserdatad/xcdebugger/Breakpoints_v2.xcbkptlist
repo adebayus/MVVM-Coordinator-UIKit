@@ -7,32 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5E4C4A71-F90B-41E9-A704-FA395F56112A"
-            shouldBeEnabled = "Yes"
+            uuid = "49FE8D04-D48B-4A2E-8837-514AFAF9414C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitCoordinator/Coordinators/AuthCoordinator.swift"
+            filePath = "UIKitCoordinator/Modules/TabBar/TaBarViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "gotoTesting()"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "setupBinds()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "80BF635C-2E0E-4517-A8BC-3A23301B9A84"
+            uuid = "45AB42C7-7B95-43AD-86C5-DAFD7F609D56"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCoordinator/Modules/TabBar/TaBarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "setupView(isInit:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00C6D8AB-FD08-4764-BC79-59ACC4708FEE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitCoordinator/Common/Extensions/UIViewController+Extension.swift"
+            filePath = "UIKitCoordinator/Modules/TabBar/TaBarViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "showToast(message:style:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "setupView(isInit:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD32B2F8-16C2-44F1-9A98-E41DCD312E47"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCoordinator/Modules/TabBar/TaBarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "setupBinds()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

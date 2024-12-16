@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,16 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        setupStyleNavigationBar()
-          
-        self.window = UIWindow(frame: UIScreen.main.bounds )
-        
-        let navControler = UINavigationController()
-        appCoordinator = AppCoordinator(navigationController: navControler)
-        appCoordinator!.start()
-        
-        window!.rootViewController = navControler
-        window!.makeKeyAndVisible()
+        KeychainWrapper.standard.removeAllKeys()
+        if #available(iOS 13, *) {
+            
+            
+        } else {
+            self.window = UIWindow(frame: UIScreen.main.bounds )
+            
+            let navControler = UINavigationController()
+            appCoordinator = AppCoordinator(navigationController: navControler)
+            appCoordinator!.start()
+            
+            window!.rootViewController = navControler
+            window!.makeKeyAndVisible()
+        }
         
         return true
     }
@@ -56,7 +61,7 @@ func setupStyleNavigationBar() {
         appearance.backgroundColor = .backgroundPrimary
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
     } else {
-        // Fallback on earlier versions
+        // Fallback on earlier versionssa
         let navigationBar = UINavigationBar.appearance()
         navigationBar.tintColor = UIColor.systemBlue
         navigationBar.tintColor = UIColor.white

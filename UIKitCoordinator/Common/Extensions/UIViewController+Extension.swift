@@ -15,7 +15,7 @@ extension UIViewController {
         loadingView.translatesAutoresizingMaskIntoConstraints =  false
         
         self.view?.addSubview(loadingView)
-        loadingView.isHidden = false
+        loadingView.isHidden = true
         NSLayoutConstraint.activate([
             loadingView.topAnchor.constraint(equalTo: self.view.topAnchor),
             loadingView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),

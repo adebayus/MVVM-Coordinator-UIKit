@@ -28,7 +28,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="143"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MQ8-7v-zw3">
-                                    <rect key="frame" x="20" y="49.333333333333329" width="159.33333333333334" height="39.666666666666671"/>
+                                    <rect key="frame" x="20" y="57.333333333333336" width="159.33333333333334" height="23.333333333333336"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oEO-kT-ja9">
                                             <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="23.333333333333332"/>
@@ -56,8 +56,8 @@
                                                 </imageView>
                                             </subviews>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDu-jp-OOz">
-                                            <rect key="frame" x="0.0" y="23.333333333333329" width="159.33333333333334" height="16.333333333333329"/>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDu-jp-OOz">
+                                            <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="0.0"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Arjuna">
                                                     <attributes>

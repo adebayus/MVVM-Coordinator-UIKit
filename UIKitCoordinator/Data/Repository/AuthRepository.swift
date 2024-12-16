@@ -11,9 +11,11 @@ import Alamofire
 
 protocol AuthRepositoryProtocol {
     func auth(request: AuthRequest) -> Observable<LoginResponse?>
+    func getDetail() -> Observable<DetailUserResponseModel?>
 }
 
 class AuthRepository: AuthRepositoryProtocol {
+ 
     
     private let networkService: NetworkService
     
@@ -35,6 +37,12 @@ class AuthRepository: AuthRepositoryProtocol {
             method: .post,
             paramaters: paramaters,
             encoding: JSONEncoding.prettyPrinted
+        )
+    }
+    
+    func getDetail() -> RxSwift.Observable<DetailUserResponseModel?> {
+        return networkService.request(
+            .getDetailUser
         )
     }
     

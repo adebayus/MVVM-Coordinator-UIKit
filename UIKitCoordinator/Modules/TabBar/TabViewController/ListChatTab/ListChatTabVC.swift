@@ -19,12 +19,14 @@ class ListChatTabVC: UIViewController {
         super.viewDidLoad()
         setupView()
         setupBinds()
+        viewModel.fetchDataFirst()
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
+        
     }
     
     private func setupView() {
@@ -52,11 +54,19 @@ class ListChatTabVC: UIViewController {
             .subscribe(
                 onNext: { indexPath in
                     let data = self.viewModel.datasFilter.value[indexPath.row]
-                    self.viewModel.selectedFilter.accept(data)
-                    self.filterStatusCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-                    self.filterStatusCollectionView.reloadData()
+                    
+                    if data.type == .inProgress {
+                        self.viewModel.goToTesting()
+                    } else {
+                        self.viewModel.selectedFilter.accept(data)
+                        self.filterStatusCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+                        self.filterStatusCollectionView.reloadData()
+                    }
+                   
                 }
             ).disposed(by: viewModel.bag)
     }
+    
+    
     
 }

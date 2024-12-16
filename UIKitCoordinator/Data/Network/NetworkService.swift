@@ -99,6 +99,7 @@ class NetworkService {
                         
                         break
                     case .failure(let error):
+                        print(error, "[NetworkService]")
                         observer.onError(error)
                         
                         break

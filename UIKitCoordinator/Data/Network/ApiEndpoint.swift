@@ -10,13 +10,20 @@ enum ApiEndpoint {
     
     static let baseURL = "https://cure-api.mediainovasi.id"
     
-    case postAuth
     case getAuth(id: Int)
+    case postAuth
+    case getDetailUser
+    
+    case getPermisionNumber
+    case getHandledNumber
     
     var path: String {
         switch self {
         case .postAuth: "/auth/login"
         case .getAuth(id: let id): "/auth/\(id)"
+        case .getDetailUser: "/auth"
+        case .getPermisionNumber: "/contact/permission"
+        case .getHandledNumber: "/contact"
         }
     }
     

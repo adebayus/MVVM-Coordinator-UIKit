@@ -49,6 +49,7 @@ class AuthCoordinator: Coordinator {
         
         let viewModel = UITabBarViewModel()
         viewModel.coordinator = self
+        viewModel.authRepo = AuthRepository()
         let vc = TaBarViewController(viewModel: viewModel)
        
         navigationController.setViewControllers([vc], animated: true)

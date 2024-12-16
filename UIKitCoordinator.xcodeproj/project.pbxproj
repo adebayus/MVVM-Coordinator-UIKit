@@ -35,6 +35,11 @@
 		64B8BF422D0A8FDD004D56BC /* UITabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8BF412D0A8FDD004D56BC /* UITabBarViewModel.swift */; };
 		64B8BF4D2D0A92A1004D56BC /* ListChatTabVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B8BF4C2D0A92A1004D56BC /* ListChatTabVC.xib */; };
 		64B8BF4E2D0A92A1004D56BC /* ListChatTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8BF4B2D0A92A1004D56BC /* ListChatTabVC.swift */; };
+		64C809CA2D1008A100A955BE /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C809C92D1008A100A955BE /* ContactRepository.swift */; };
+		64C809CC2D1009C100A955BE /* PermissionNumberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C809CB2D1009C100A955BE /* PermissionNumberResponse.swift */; };
+		64C809CE2D100C8A00A955BE /* HandledContactResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C809CD2D100C8A00A955BE /* HandledContactResponse.swift */; };
+		64C809D42D100E2400A955BE /* ChannelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C809D32D100E2400A955BE /* ChannelType.swift */; };
+		64C809D82D100F1B00A955BE /* HandledContactRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C809D72D100F1B00A955BE /* HandledContactRequest.swift */; };
 		64D141402D0BD850004D3554 /* RoundedTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D1413F2D0BD850004D3554 /* RoundedTopView.swift */; };
 		64D141452D0C1125004D3554 /* ListChatTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D141442D0C1125004D3554 /* ListChatTabViewModel.swift */; };
 		64D141502D0C1292004D3554 /* FilterChatStatusCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D1414D2D0C1292004D3554 /* FilterChatStatusCollectionCell.swift */; };
@@ -43,6 +48,9 @@
 		64DCFA752CE746BA00151C9A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DCFA742CE746BA00151C9A /* SessionManager.swift */; };
 		64DCFA772CE7495000151C9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DCFA762CE7494F00151C9A /* Constants.swift */; };
 		64DCFA7E2CE74CD500151C9A /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DCFA7C2CE74CD500151C9A /* KeychainManager.swift */; };
+		64F4D6B72D0FD77A00B2B80C /* ExampelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4D6B52D0FD77A00B2B80C /* ExampelViewController.swift */; };
+		64F4D6B82D0FD77A00B2B80C /* ExampelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F4D6B62D0FD77A00B2B80C /* ExampelViewController.xib */; };
+		64F4D6BB2D0FDC1700B2B80C /* DetailUserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4D6BA2D0FDC1700B2B80C /* DetailUserResponseModel.swift */; };
 		64FAC9B12CE7109700B7E228 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647F054D2CE3521B00DFF39A /* LoginViewController.xib */; };
 		64FAC9B32CE71BCD00B7E228 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F054C2CE3521B00DFF39A /* LoginViewController.swift */; };
 		CBCECAF5A785439565BB9BDD /* Pods_UIKitCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E023867B5CB76C9375CE1A2 /* Pods_UIKitCoordinator.framework */; };
@@ -105,6 +113,11 @@
 		64B8BF412D0A8FDD004D56BC /* UITabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewModel.swift; sourceTree = "<group>"; };
 		64B8BF4B2D0A92A1004D56BC /* ListChatTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChatTabVC.swift; sourceTree = "<group>"; };
 		64B8BF4C2D0A92A1004D56BC /* ListChatTabVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListChatTabVC.xib; sourceTree = "<group>"; };
+		64C809C92D1008A100A955BE /* ContactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
+		64C809CB2D1009C100A955BE /* PermissionNumberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionNumberResponse.swift; sourceTree = "<group>"; };
+		64C809CD2D100C8A00A955BE /* HandledContactResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandledContactResponse.swift; sourceTree = "<group>"; };
+		64C809D32D100E2400A955BE /* ChannelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelType.swift; sourceTree = "<group>"; };
+		64C809D72D100F1B00A955BE /* HandledContactRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandledContactRequest.swift; sourceTree = "<group>"; };
 		64D1413F2D0BD850004D3554 /* RoundedTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTopView.swift; sourceTree = "<group>"; };
 		64D141442D0C1125004D3554 /* ListChatTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChatTabViewModel.swift; sourceTree = "<group>"; };
 		64D1414D2D0C1292004D3554 /* FilterChatStatusCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChatStatusCollectionCell.swift; sourceTree = "<group>"; };
@@ -113,6 +126,9 @@
 		64DCFA742CE746BA00151C9A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		64DCFA762CE7494F00151C9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		64DCFA7C2CE74CD500151C9A /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		64F4D6B52D0FD77A00B2B80C /* ExampelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampelViewController.swift; sourceTree = "<group>"; };
+		64F4D6B62D0FD77A00B2B80C /* ExampelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampelViewController.xib; sourceTree = "<group>"; };
+		64F4D6BA2D0FDC1700B2B80C /* DetailUserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserResponseModel.swift; sourceTree = "<group>"; };
 		6BF3469DD503901159C84A3A /* Pods-UIKitCoordinatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCoordinatorTests.debug.xcconfig"; path = "Target Support Files/Pods-UIKitCoordinatorTests/Pods-UIKitCoordinatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E023867B5CB76C9375CE1A2 /* Pods_UIKitCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9787B59747D4C31615F65867 /* Pods_UIKitCoordinatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitCoordinatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				1FE6F1C92CE7AA760008BC6A /* AuthRepository.swift */,
+				64C809C92D1008A100A955BE /* ContactRepository.swift */,
 				1FE6F1CE2CE7AF010008BC6A /* Models */,
 			);
 			path = Repository;
@@ -173,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				1FE6F1CC2CE7AB370008BC6A /* BaseResponse.swift */,
+				64C809D32D100E2400A955BE /* ChannelType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +198,8 @@
 		1FE6F1CE2CE7AF010008BC6A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				64C809D62D100F0E00A955BE /* Request */,
+				64F4D6B92D0FDC0300B2B80C /* Response */,
 				1FE6F1CF2CE7AF120008BC6A /* AuthRequest.swift */,
 			);
 			path = Models;
@@ -232,6 +252,8 @@
 			children = (
 				647875C82CE49CB6007A804B /* TestingRXViewController.swift */,
 				647875C92CE49CB6007A804B /* TestingRXViewController.xib */,
+				64F4D6B52D0FD77A00B2B80C /* ExampelViewController.swift */,
+				64F4D6B62D0FD77A00B2B80C /* ExampelViewController.xib */,
 			);
 			path = TestingRX;
 			sourceTree = "<group>";
@@ -442,6 +464,14 @@
 			path = ListChatTab;
 			sourceTree = "<group>";
 		};
+		64C809D62D100F0E00A955BE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				64C809D72D100F1B00A955BE /* HandledContactRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		64D141432D0C1112004D3554 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +495,16 @@
 				64DCFA7C2CE74CD500151C9A /* KeychainManager.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		64F4D6B92D0FDC0300B2B80C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				64F4D6BA2D0FDC1700B2B80C /* DetailUserResponseModel.swift */,
+				64C809CB2D1009C100A955BE /* PermissionNumberResponse.swift */,
+				64C809CD2D100C8A00A955BE /* HandledContactResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,6 +624,7 @@
 				64D141512D0C1292004D3554 /* FilterChatStatusCollectionCell.xib in Resources */,
 				64B8BF4D2D0A92A1004D56BC /* ListChatTabVC.xib in Resources */,
 				642B20C82CFDBA6A006825A8 /* GoogleService-Info.plist in Resources */,
+				64F4D6B82D0FD77A00B2B80C /* ExampelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +759,7 @@
 				1FE6F1DF2CE8F98F0008BC6A /* LoadingView.swift in Sources */,
 				647F052C2CE33CF700DFF39A /* SceneDelegate.swift in Sources */,
 				6435EA5B2CEAE37900EFA523 /* ToastView.swift in Sources */,
+				64C809D42D100E2400A955BE /* ChannelType.swift in Sources */,
 				64DCFA7E2CE74CD500151C9A /* KeychainManager.swift in Sources */,
 				647F05472CE34AEF00DFF39A /* BottomRoundedView.swift in Sources */,
 				647875C72CE48E03007A804B /* NetworkService.swift in Sources */,
@@ -731,14 +773,20 @@
 				1FE6F1C72CE7A4350008BC6A /* DeviceManagerr.swift in Sources */,
 				647F05312CE33CF700DFF39A /* LoginViewModel.swift in Sources */,
 				1FE6F1CA2CE7AA760008BC6A /* AuthRepository.swift in Sources */,
+				64C809CC2D1009C100A955BE /* PermissionNumberResponse.swift in Sources */,
 				64DCFA772CE7495000151C9A /* Constants.swift in Sources */,
 				1FE6F1D62CE8F02F0008BC6A /* TaBarViewController.swift in Sources */,
+				64F4D6BB2D0FDC1700B2B80C /* DetailUserResponseModel.swift in Sources */,
+				64C809CE2D100C8A00A955BE /* HandledContactResponse.swift in Sources */,
 				1FE6F1D02CE7AF120008BC6A /* AuthRequest.swift in Sources */,
 				1FE6F1DD2CE8F8E30008BC6A /* UIViewController+Extension.swift in Sources */,
 				64DCFA732CE7454B00151C9A /* ApiEndpoint.swift in Sources */,
 				64D141402D0BD850004D3554 /* RoundedTopView.swift in Sources */,
 				64B8BF422D0A8FDD004D56BC /* UITabBarViewModel.swift in Sources */,
+				64C809D82D100F1B00A955BE /* HandledContactRequest.swift in Sources */,
+				64F4D6B72D0FD77A00B2B80C /* ExampelViewController.swift in Sources */,
 				64DCFA752CE746BA00151C9A /* SessionManager.swift in Sources */,
+				64C809CA2D1008A100A955BE /* ContactRepository.swift in Sources */,
 				64D141502D0C1292004D3554 /* FilterChatStatusCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

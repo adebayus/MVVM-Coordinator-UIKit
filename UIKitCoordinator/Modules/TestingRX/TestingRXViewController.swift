@@ -17,9 +17,9 @@ class TestingRXViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TestingRXViewController")
-        viewModel.fetchTodo()
-        setupBind()
-        testing()
+//        viewModel.fetchTodo()
+//        setupBind()
+//        testing()
 
         print(self.view.subviews, "list subview")
         // Do any additional setup after loading the view.
