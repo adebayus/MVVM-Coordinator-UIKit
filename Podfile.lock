@@ -6,6 +6,9 @@ PODS:
   - RxRelay (6.8.0):
     - RxSwift (= 6.8.0)
   - RxSwift (6.8.0)
+  - Socket.IO-Client-Swift (16.1.1):
+    - Starscream (~> 4.0.8)
+  - Starscream (4.0.8)
   - SwiftKeychainWrapper (4.0.1)
   - Wormholy (1.7.0)
 
@@ -13,6 +16,7 @@ DEPENDENCIES:
   - Alamofire
   - RxCocoa
   - RxSwift
+  - Socket.IO-Client-Swift (~> 16.1.0)
   - SwiftKeychainWrapper
   - Wormholy
 
@@ -22,6 +26,8 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - Socket.IO-Client-Swift
+    - Starscream
     - SwiftKeychainWrapper
     - Wormholy
 
@@ -30,9 +36,11 @@ SPEC CHECKSUMS:
   RxCocoa: 2d33c1e1e5d66492052ad46b11024ae287572880
   RxRelay: 335c78b926a2aea8d863a6d25f1ed3b5ad8e8705
   RxSwift: 4e28be97cbcfeee614af26d83415febbf2bf6f45
+  Socket.IO-Client-Swift: 3614bea82ba005df1c2ff01154f4004993e05ad7
+  Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   Wormholy: ab1c8c2f02f58587a0941deb0088555ffbf039a1
 
-PODFILE CHECKSUM: 26aeecc37646c8afb5d9062f1a9dc27f84218d98
+PODFILE CHECKSUM: 081c4216711b5e10a21b7172647877fd67035cf4
 
 COCOAPODS: 1.15.2

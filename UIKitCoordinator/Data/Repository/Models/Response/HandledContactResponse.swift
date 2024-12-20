@@ -24,7 +24,7 @@ struct HandledContactResponse: Codable {
 //    let mergedContacts: JSONNull?
     let totalUnread: Int?
     let pairedAt: String?
-    let lastRoomStatus: String?
+    let lastRoomStatus: RoomStatusType?
     let lastFreeformStatus: Bool?
     let lastMessage: HandledContactLastMessageResponse?
     let whatsapp: HandledContactWhatsappResponse?
@@ -54,4 +54,19 @@ struct HandledContactResponse: Codable {
         let contactUsername: String?
     }
     
+}
+
+
+enum RoomStatusType: String, Codable {
+    case ongoing
+    case unresolved
+    case resolved
+    case newexpired
+}
+
+enum StatusChatType: String, Codable {
+    case read
+    case delivered
+    case failed
+    case sent
 }

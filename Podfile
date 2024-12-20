@@ -12,6 +12,7 @@ target 'UIKitCoordinator' do
   pod "Alamofire"
   pod "SwiftKeychainWrapper"
   pod "Wormholy"
+  pod 'Socket.IO-Client-Swift', '~> 16.1.0'
   
   target 'UIKitCoordinatorTests' do
     inherit! :search_paths
