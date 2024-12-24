@@ -17,6 +17,8 @@
 		3631865EE91EE2D3D9A23B9F /* Pods_UIKitCoordinatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9787B59747D4C31615F65867 /* Pods_UIKitCoordinatorTests.framework */; };
 		642B20C82CFDBA6A006825A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 642B20C72CFDBA69006825A8 /* GoogleService-Info.plist */; };
 		6435EA5B2CEAE37900EFA523 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6435EA5A2CEAE37900EFA523 /* ToastView.swift */; };
+		6461A6F32D191FE50067835A /* DateFormatterUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6461A6F22D191FE50067835A /* DateFormatterUtility.swift */; };
+		6461A6F52D19660E0067835A /* DateFormtter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6461A6F42D19660E0067835A /* DateFormtter+Extension.swift */; };
 		647875C72CE48E03007A804B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647875C52CE48E03007A804B /* NetworkService.swift */; };
 		647875CA2CE49CB6007A804B /* TestingRXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647875C82CE49CB6007A804B /* TestingRXViewController.swift */; };
 		647875CB2CE49CB6007A804B /* TestingRXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647875C92CE49CB6007A804B /* TestingRXViewController.xib */; };
@@ -30,6 +32,7 @@
 		647F05302CE33CF700DFF39A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F051C2CE33CF700DFF39A /* Coordinator.swift */; };
 		647F05312CE33CF700DFF39A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F05202CE33CF700DFF39A /* LoginViewModel.swift */; };
 		647F05472CE34AEF00DFF39A /* BottomRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F05462CE34AEF00DFF39A /* BottomRoundedView.swift */; };
+		648DEAF42D1A95F50037B912 /* CompanyBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648DEAF32D1A95F50037B912 /* CompanyBadgeView.swift */; };
 		649F0E142D1543AE0061C734 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649F0E132D1543AE0061C734 /* ChatTableViewCell.xib */; };
 		649F0E152D1543AE0061C734 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F0E122D1543AE0061C734 /* ChatTableViewCell.swift */; };
 		649F0E172D155C9A0061C734 /* TypeRoundedProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F0E162D155C9A0061C734 /* TypeRoundedProfileView.swift */; };
@@ -95,6 +98,8 @@
 		645A65B52CE1B0AF00173986 /* UIKitCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645A65CB2CE1B0B100173986 /* UIKitCoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitCoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		645A65D52CE1B0B100173986 /* UIKitCoordinatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitCoordinatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6461A6F22D191FE50067835A /* DateFormatterUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterUtility.swift; sourceTree = "<group>"; };
+		6461A6F42D19660E0067835A /* DateFormtter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormtter+Extension.swift"; sourceTree = "<group>"; };
 		647875C52CE48E03007A804B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		647875C82CE49CB6007A804B /* TestingRXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingRXViewController.swift; sourceTree = "<group>"; };
 		647875C92CE49CB6007A804B /* TestingRXViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestingRXViewController.xib; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 		647F05462CE34AEF00DFF39A /* BottomRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomRoundedView.swift; sourceTree = "<group>"; };
 		647F054C2CE3521B00DFF39A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		647F054D2CE3521B00DFF39A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		648DEAF32D1A95F50037B912 /* CompanyBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyBadgeView.swift; sourceTree = "<group>"; };
 		649F0E122D1543AE0061C734 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		649F0E132D1543AE0061C734 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		649F0E162D155C9A0061C734 /* TypeRoundedProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRoundedProfileView.swift; sourceTree = "<group>"; };
@@ -253,6 +259,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6461A6F12D191FB10067835A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6461A6F22D191FE50067835A /* DateFormatterUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		646A7CDB2CE4801B0003E2AD /* TestingRX */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +298,13 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		647EF2A92D190B27005EC74C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		647F05152CE33CF700DFF39A /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				1FE6F1DC2CE8F8E30008BC6A /* UIViewController+Extension.swift */,
+				6461A6F42D19660E0067835A /* DateFormtter+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,6 +342,7 @@
 				1FE6F1DE2CE8F98F0008BC6A /* LoadingView.swift */,
 				6435EA5A2CEAE37900EFA523 /* ToastView.swift */,
 				64D1413F2D0BD850004D3554 /* RoundedTopView.swift */,
+				648DEAF32D1A95F50037B912 /* CompanyBadgeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,6 +350,7 @@
 		647F05192CE33CF700DFF39A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6461A6F12D191FB10067835A /* Utility */,
 				647F05162CE33CF700DFF39A /* Extensions */,
 				647F05172CE33CF700DFF39A /* Helpers */,
 				647F05182CE33CF700DFF39A /* Views */,
@@ -393,7 +417,6 @@
 			isa = PBXGroup;
 			children = (
 				642B20C72CFDBA69006825A8 /* GoogleService-Info.plist */,
-				649CCE0F2CE5A7CB0055A7E6 /* Fonts */,
 				647F05242CE33CF700DFF39A /* Assets.xcassets */,
 				647F05252CE33CF700DFF39A /* Info.plist */,
 			);
@@ -403,6 +426,7 @@
 		647F05272CE33CF700DFF39A /* UIKitCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				647EF2A92D190B27005EC74C /* Fonts */,
 				1FE6F1CB2CE7AB280008BC6A /* Models */,
 				646A7CE52CE4890C0003E2AD /* Data */,
 				647F05152CE33CF700DFF39A /* App */,
@@ -426,13 +450,6 @@
 			children = (
 			);
 			path = UIKitCoordinatorUITests;
-			sourceTree = "<group>";
-		};
-		649CCE0F2CE5A7CB0055A7E6 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		64B8BF3C2D0A8824004D56BC /* Chatting */ = {
@@ -585,7 +602,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					645A65B42CE1B0AF00173986 = {
 						CreatedOnToolsVersion = 16.0;
@@ -763,12 +780,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B8BF3E2D0A8824004D56BC /* ChattingViewController.swift in Sources */,
+				6461A6F32D191FE50067835A /* DateFormatterUtility.swift in Sources */,
 				647E3D152CE723AE00AA9795 /* UIButtonCapsule.swift in Sources */,
 				647875CA2CE49CB6007A804B /* TestingRXViewController.swift in Sources */,
 				647F052B2CE33CF700DFF39A /* AppDelegate.swift in Sources */,
 				1FE6F1DF2CE8F98F0008BC6A /* LoadingView.swift in Sources */,
 				647F052C2CE33CF700DFF39A /* SceneDelegate.swift in Sources */,
 				6435EA5B2CEAE37900EFA523 /* ToastView.swift in Sources */,
+				6461A6F52D19660E0067835A /* DateFormtter+Extension.swift in Sources */,
 				649F0E152D1543AE0061C734 /* ChatTableViewCell.swift in Sources */,
 				64C809D42D100E2400A955BE /* ChannelType.swift in Sources */,
 				64DCFA7E2CE74CD500151C9A /* KeychainManager.swift in Sources */,
@@ -798,6 +817,7 @@
 				64C809D82D100F1B00A955BE /* HandledContactRequest.swift in Sources */,
 				64F4D6B72D0FD77A00B2B80C /* ExampelViewController.swift in Sources */,
 				64DCFA752CE746BA00151C9A /* SessionManager.swift in Sources */,
+				648DEAF42D1A95F50037B912 /* CompanyBadgeView.swift in Sources */,
 				64C809CA2D1008A100A955BE /* ContactRepository.swift in Sources */,
 				64D141502D0C1292004D3554 /* FilterChatStatusCollectionCell.swift in Sources */,
 			);

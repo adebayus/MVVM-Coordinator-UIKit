@@ -7,96 +7,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "49FE8D04-D48B-4A2E-8837-514AFAF9414C"
+            uuid = "BB073E2A-82BF-4A06-99B4-0E1BA631A8C6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitCoordinator/Modules/TabBar/TaBarViewController.swift"
+            filePath = "UIKitCoordinator/Modules/TabBar/TabViewController/ListChatTab/Cell/ChatTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "setupBinds()"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "dateChatFormatter(date:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "45AB42C7-7B95-43AD-86C5-DAFD7F609D56"
+            uuid = "E9FD9F2D-2B98-4E65-96E6-1BF7918B8CB7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitCoordinator/Modules/TabBar/TaBarViewController.swift"
+            filePath = "UIKitCoordinator/Modules/TabBar/TabViewController/ListChatTab/Cell/ChatTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "setupView(isInit:)"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "dateChatFormatter(date:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "00C6D8AB-FD08-4764-BC79-59ACC4708FEE"
-            shouldBeEnabled = "Yes"
+            uuid = "A6A917AF-FD7A-457F-9AB2-A71ABE218288"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitCoordinator/Modules/TabBar/TaBarViewController.swift"
+            filePath = "UIKitCoordinator/Modules/TabBar/TabViewController/ListChatTab/Cell/ChatTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "setupView(isInit:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "dateChatFormatter(date:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FD32B2F8-16C2-44F1-9A98-E41DCD312E47"
+            uuid = "74927884-BD5D-42E6-914B-993D4142065A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitCoordinator/Modules/TabBar/TaBarViewController.swift"
+            filePath = "UIKitCoordinator/Modules/TabBar/TabViewController/ListChatTab/Cell/ChatTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "setupBinds()"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "dateChatFormatter(date:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "798A5C4C-60E7-4687-B618-9DFC21D90BA7"
-            shouldBeEnabled = "Yes"
+            uuid = "EFE57AD3-B0E4-430A-942B-F0066DB55265"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitCoordinator/Modules/TabBar/TabViewController/ListChatTab/ViewModel/ListChatTabViewModel.swift"
+            filePath = "UIKitCoordinator/Modules/TabBar/TabViewController/ListChatTab/Cell/ChatTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "mappingFilterChat(selectedFilter:)"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "dateChatFormatter(date:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "180D7531-B6EE-43A4-903D-66E63845C8F9"
+            uuid = "8D013C39-85A7-4D05-B132-226BBCE26414"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIKitCoordinator/Common/Views/CompanyBadgeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "layoutSubviews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E115334-8CC7-48CE-8A23-08F041F0C8CC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIKitCoordinator/Modules/TabBar/TabViewController/ListChatTab/ViewModel/ListChatTabViewModel.swift"
+            filePath = "UIKitCoordinator/Common/Views/CompanyBadgeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "mappingFilterChat(selectedFilter:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "layoutSubviews()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -116,9 +116,9 @@ class ListChatTabViewModel {
             username: data.contactName ?? "",
             isBlocked: data.isBlocked ?? false,
             statusChat: data.lastRoomStatus ?? .unresolved,
-            lateMessageDate: data.lastMessage?.timestamp ?? "-",
-            lastMessage: data.lastMessage?.content ?? "-",
-            companyName: data.companyName ?? "-",
+            lateMessageDate: data.lastMessage?.timestamp,
+            lastMessage: data.lastMessage?.content,
+            companyName: data.companyName ?? "",
             unreadChat: data.totalUnread ?? 0
         )
         
